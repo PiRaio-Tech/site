@@ -1,0 +1,39 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0E0E0E;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    max-width: 100px;
+    max-height: auto;
+}
+
+nav{
+    background-color: #C9E265;
+    width: calc(50% - 100px);
+    height: 10vh;
+}
+
+.content{
+    height: 100vw;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #C9E265;
+    height: 30vh;
+    padding: 50px;
+}
+
+footer h4{
+    font-weight: bold;
+    color: #0E0E0E;
+    font-size: 20px;
+}
+
