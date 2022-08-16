@@ -1,5 +1,5 @@
 ::-webkit-scrollbar-track {
-    background-color: transparent;
+    background-color: gray;
 }
 
 ::-webkit-scrollbar {
@@ -8,7 +8,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #e0e0e0;
+    background: white;
     border-radius: 10px;
 }
 
@@ -89,7 +89,7 @@ ul{
     height: 40px;
 }
 
-li{
+.cabecalho li{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,12 +98,12 @@ li{
     margin-top: 40px;
 }
 
-li a{
+.cabecalho li a{
     color: transparent;
     font-weight: 600;
 }
 
-li img{
+.cabecalho li img{
     filter: invert(86%) sepia(37%) saturate(595%) hue-rotate(18deg) brightness(97%) contrast(91%);
     margin-bottom: 10px;
     cursor: pointer;
@@ -156,21 +156,65 @@ li img{
 
 footer{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     background-color: #C9E265;
     height: 30vh;
     padding: 50px;
 }
 
-.endereco{
-    
+footer img{
+    width: 25px;
 }
 
 footer h4{
     font-weight: bold;
-    color: #0E0E0E;
-    margin-bottom: 20px;
+    color: #060A0E;
+    margin: 0 0 40px 0;
+    padding: 10px;
+    font-size: 28px;
+    border: 3px solid #060A0E;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    width: 7em;
+}
+
+.parqueTec{
+    display: flex;
+    align-items: center;
+    margin: 0 20px 10px 25px;
+}
+
+footer h5{
+    font-weight: bold;
     font-size: 20px;
+    margin-left: 5px;
+}
+
+footer p{
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+
+    margin: 50px 0 0 20px;
+    width: 250px;
+}
+
+footer li{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+footer li img{
+    height: 20px;
 }
 
 @keyframes hoverImg{
