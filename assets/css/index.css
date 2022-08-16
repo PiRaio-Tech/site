@@ -1,22 +1,153 @@
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: #0E0E0E;
+    background-color: #060A0E;
 }
 
 header{
     display: flex;
     justify-content: space-between;
+    background-color: #000;
+    height: 10vh;
 }
 
 .logo{
-    max-width: 100px;
-    max-height: auto;
+    max-width: 60px;
+    max-height: 60px;
+    margin: 20px;
+    margin-right: calc(20% - 120px);
+    align-self: center;
 }
 
-nav{
+.paginas, .contato{
+    display: flex;
+    align-items: center;
+    width: 35%;
+    height: 80px;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.btnRedes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin-top: 40px;
+}
+
+.btnRedes img{
+    filter: invert(86%) sepia(37%) saturate(595%) hue-rotate(18deg) brightness(97%) contrast(91%);
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 5px;
+    height: 30px;
+}
+
+.contato{
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    align-items: center;
+}
+
+.contato a{
+    color: transparent;
+}
+
+.maisRedes{
+    width: 0; 
+    height: 0; 
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 15px solid #C9E265;
+    position: absolute;
+    margin-top: calc(10vh + 25px);
+    font-weight: bold;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 40px;
+}
+
+li a{
+    color: transparent;
+    font-weight: 600;
+}
+
+li img{
+    filter: invert(86%) sepia(37%) saturate(595%) hue-rotate(18deg) brightness(97%) contrast(91%);
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 5px;
+    height: 30px;
+}
+
+.paginas li:hover, .btnRedes:hover{
+    animation-name: hoverImg;
+    animation-duration: 0.3s;
+    margin-bottom: 30px;
+}
+
+.paginas li:hover a, .btnRedes:hover a{   
+    animation-name: hoverA;
+    animation-duration: 0.3s;
+    color: #C9E265;
+
+}
+
+.paginas li:hover img, .btnRedes:hover img{
+    border-radius: 50px;
     background-color: #C9E265;
-    width: calc(50% - 100px);
-    height: 10vh;
+    filter: none;
+}
+
+.barraHorizontal{
+    background-color: #C9E265;
+    border: none;
+    height: 5px;
+    margin: 0;
+}
+
+.listaRedes{
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    width: 60px;
+    margin-top: 15vh;
+    display: none;
+    animation-name: showSocial;
+    animation-duration: 0.3s;
+    z-index: -1;
+    margin-right: 0;
 }
 
 .content{
@@ -31,9 +162,44 @@ footer{
     padding: 50px;
 }
 
+.endereco{
+    
+}
+
 footer h4{
     font-weight: bold;
     color: #0E0E0E;
+    margin-bottom: 20px;
     font-size: 20px;
 }
 
+@keyframes hoverImg{
+    from{
+        margin-bottom: 0px;
+    }
+    to{
+        margin-bottom: 30px;
+    }
+
+}
+
+@keyframes hoverA{
+    from{
+        color: transparent;
+    }
+    to{
+        color: #C9E265;
+    }
+
+}
+
+@keyframes showSocial {
+    from{
+        margin-top: -50vh;
+        display: none;
+    }
+    to{
+        display: inline-block;
+        margin-top: 15vh;
+    }
+}
