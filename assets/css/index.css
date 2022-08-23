@@ -247,3 +247,25 @@ footer li img{
         margin-top: 15vh;
     }
 }
+
+#title{
+    color: #C9E265;
+    font-size: 30pt;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#subtitle{
+    color: #BDB9B9;
+    margin-top: 10px;
+    font-size: 15pt;
+    text-align: center;
+}
+
+#categorias{
+    color: #C9E265;
+    font-size: 20pt;
+    text-align: center;
+}
+
+
