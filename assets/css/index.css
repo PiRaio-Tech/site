@@ -278,13 +278,13 @@ footer li img{
     border-radius: 100px;
     width: 200px;
     height: 200px;
-    margin-top: 40px;
+    margin-top: 290px;
+    margin-left: 10px;
     align-items: center;
-   margin-left: 105px;
-   background-size: 100px;
-   background-repeat: no-repeat;
-   background-position: center;
-   background-color: #C9E265;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #C9E265;    
 }
 
 #software{
@@ -305,12 +305,28 @@ footer li img{
     background-image: url(../../cog-outline.svg);
 }
 
-#subtitleBtn{
+.subtitleBtn{
     color: #BDB9B9;
-    margin-left: 162px;
     margin-top: 10px;
     font-weight: bold;
 }
 
+.legenda{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#title2{
+    color: #C9E265;
+    font-size: 30pt;
+    margin-top: 380px;
+    text-align: end;
+    margin-right: 130px;
+    font-weight: bold;
+    line-height: 50px;
+}
 
 
