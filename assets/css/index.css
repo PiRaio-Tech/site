@@ -251,21 +251,66 @@ footer li img{
 #title{
     color: #C9E265;
     font-size: 30pt;
-    margin-top: 30px;
-    text-align: center;
+    margin-top: 50px;
+    margin-left: 130px;
+    font-weight: bold;
+    line-height: 50px;
 }
 
 #subtitle{
     color: #BDB9B9;
     margin-top: 10px;
     font-size: 15pt;
-    text-align: center;
+    margin-left: 130px;
+    line-height: 30px;
 }
 
 #categorias{
     color: #C9E265;
     font-size: 20pt;
     text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
 }
+
+.btn-segmento{
+    text-align: center;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    align-items: center;
+   margin-left: 105px;
+   background-size: 100px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: #C9E265;
+}
+
+#software{
+    background-image: url(../../laptop-outline.svg);
+   
+}
+
+#inovacao{
+    background-image: url(../../bulb-outline.svg);
+   
+}
+
+#ia{
+    background-image: url(../../hardware-chip-outline.svg);
+}
+
+#automacao{
+    background-image: url(../../cog-outline.svg);
+}
+
+#subtitleBtn{
+    color: #BDB9B9;
+    margin-left: 162px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
 
 
