@@ -96,7 +96,7 @@ header{
     font-weight: bold;
 }
 
-ul{
+.listaPaginas, .listaRedes{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -295,3 +295,117 @@ footer li img{
         margin-top: 15vh;
     }
 }
+
+#title{
+    color: #C9E265;
+    font-size: 30pt;
+    margin-top: 50px;
+    margin-left: 130px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#subtitle{
+    color: #BDB9B9;
+    margin-top: 10px;
+    font-size: 15pt;
+    margin-left: 130px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+#categorias{
+    color: #C9E265;
+    font-size: 20pt;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.btn-segmento{
+    text-align: center;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    margin-top: 290px;
+    margin-left: 10px;
+    align-items: center;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #C9E265;    
+}
+
+#software{
+    background-image: url(../../laptop-outline.svg);
+   
+}
+
+#inovacao{
+    background-image: url(../../bulb-outline.svg);
+   
+}
+
+#ia{
+    background-image: url(../../hardware-chip-outline.svg);
+}
+
+#automacao{
+    background-image: url(../../cog-outline.svg);
+}
+
+.subtitleBtn{
+    color: #BDB9B9;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.legenda{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#title2{
+    color: #C9E265;
+    font-size: 30pt;
+    margin-top: 380px;
+    text-align: end;
+    margin-right: 130px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#subtitle2{
+    color: #BDB9B9;
+    margin-top: 10px;
+    font-size: 15pt;
+    margin-right: 130px;
+    line-height: 30px;
+    text-align: end;
+    font-weight: bold;
+}
+
+#avatares{
+    margin-top: -290px;
+}
+
+#btn-diferencial{
+    border-radius: 30px;
+    background-color: #C9E265;
+    width: 200px;
+    font-weight: bold;
+    height: 50px;
+    margin-left: 80px;
+}
+
+.trabalhos{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
