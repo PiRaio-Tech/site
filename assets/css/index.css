@@ -12,6 +12,10 @@
     border-radius: 10px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: #060A0E;
@@ -22,6 +26,8 @@ header{
     justify-content: space-between;
     background-color: #000;
     height: 10vh;
+    width: 100vw;
+    position: fixed;
 }
 
 .logo{
@@ -49,14 +55,23 @@ header{
     height: 50px;
     width: 50px;
     margin-top: 40px;
+    cursor: pointer;
 }
 
 .btnRedes img{
     filter: invert(86%) sepia(37%) saturate(595%) hue-rotate(18deg) brightness(97%) contrast(91%);
-    margin-bottom: 10px;
     cursor: pointer;
     padding: 5px;
     height: 30px;
+}
+
+.btnRedes div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    margin-bottom: 10px;
 }
 
 .contato{
@@ -96,19 +111,33 @@ ul{
     align-items: center;
     height: 50px;
     margin-top: 40px;
+    cursor: pointer;
 }
 
 .cabecalho li a{
     color: transparent;
     font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
 }
 
 .cabecalho li img{
     filter: invert(86%) sepia(37%) saturate(595%) hue-rotate(18deg) brightness(97%) contrast(91%);
-    margin-bottom: 10px;
     cursor: pointer;
     padding: 5px;
     height: 30px;
+    width: 30px;
+}
+
+.cabecalho li div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    margin-bottom: 10px;
 }
 
 .paginas li:hover, .btnRedes:hover{
@@ -124,9 +153,12 @@ ul{
 
 }
 
-.paginas li:hover img, .btnRedes:hover img{
+.paginas li:hover div, .btnRedes:hover div{
     border-radius: 50px;
     background-color: #C9E265;
+}
+
+.paginas li:hover img, .btnRedes:hover img{
     filter: none;
 }
 
@@ -134,7 +166,10 @@ ul{
     background-color: #C9E265;
     border: none;
     height: 5px;
+    width: 100vw;
     margin: 0;
+    top: 10vh;
+    position: fixed;
 }
 
 .listaRedes{
@@ -148,10 +183,23 @@ ul{
     animation-duration: 0.3s;
     z-index: -1;
     margin-right: 0;
+    
 }
 
 .content{
     height: 100vw;
+}
+
+#subirPagina{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    background-color: darkgreen;
+    border-radius: 50%;
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    bottom: 10%;
 }
 
 footer{
@@ -159,7 +207,7 @@ footer{
     flex-direction: column;
     background-color: #C9E265;
     height: 30vh;
-    padding: 50px;
+    padding: 50px 20% 50px 20%;
 }
 
 footer img{

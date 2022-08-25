@@ -1,6 +1,8 @@
 const btnRedes = document.querySelector(".btnRedes") 
 const listaRedes = document.querySelector(".listaRedes") 
 
+
+
 let redes = false
 
 btnRedes.addEventListener('click', () => {
