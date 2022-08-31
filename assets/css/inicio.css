@@ -1,0 +1,19 @@
+#inicio{
+    margin-bottom: 40vh;
+}
+
+#title{
+    color: #C9E265;
+    font-size: 30pt;
+    padding-top: 30vh;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#subtitle{
+    color: #BDB9B9;
+    margin-top: 10px;
+    font-size: 15pt;
+    line-height: 30px;
+    font-weight: bold;
+}

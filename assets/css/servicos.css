@@ -1,0 +1,97 @@
+#servicos{
+    margin-bottom: 40vh;
+}
+
+#categorias{
+    color: #C9E265;
+    font-size: 20pt;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.trabalhos{
+    margin-top: 15vh;
+}
+
+.btn-segmento{
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #C9E265;    
+    border-color: transparent;
+    cursor: pointer;
+}
+
+#software{
+    background-image: url(../../laptop-outline.svg);
+}
+
+#inovacao{
+    background-image: url(../../bulb-outline.svg);
+}
+
+#ia{
+    background-image: url(../../hardware-chip-outline.svg);
+}
+
+#automacao{
+    background-image: url(../../cog-outline.svg);
+}
+
+.subtitleBtn{
+    color: #BDB9B9;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.legenda{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.selecionado{
+    background-color: #C9E265;
+    width: 230px;
+    height: 230px;
+    border-radius: 115px;
+    animation: select;
+    animation-duration: 0.5s;
+}
+
+.naoSelecionado{
+    background-color: #C9E26525;
+    width: 200px;
+    height: 200px;
+    animation: notSelect;
+    animation-duration: 0.5s;
+}
+
+@keyframes select {
+    from{
+        background-color: #C9E265;
+        width: 200px;
+        height: 200px;
+    }
+    to{
+        background-color: #C9E265;
+        width: 230px;
+        height: 230px;
+        border-radius: 115px;
+    } 
+}
+
+@keyframes notSelect {
+    from{
+        background-color: #C9E265;
+    }
+    to{
+        background-color: #C9E26525;
+    } 
+}

@@ -1,0 +1,42 @@
+#historia{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15vh;
+}
+
+#title2{
+    color: #C9E265;
+    font-size: 30pt;
+    text-align: end;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#subtitle2{
+    color: #BDB9B9;
+    margin-top: 10px;
+    font-size: 15pt;
+    line-height: 30px;
+    text-align: end;
+    font-weight: bold;
+}
+
+#btn-diferencial{
+    border-radius: 30px;
+    background-color: #C9E265;
+    width: 250px;
+    font-weight: bold;
+    height: 50px;
+    align-self: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.trabalhos{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

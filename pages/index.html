@@ -12,6 +12,11 @@
 
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/equipe.css">
+    <link rel="stylesheet" href="../assets/css/inicio.css">
+    <link rel="stylesheet" href="../assets/css/rodape.css">
+    <link rel="stylesheet" href="../assets/css/servicos.css">
 </head>
 
 <body>
@@ -22,7 +27,7 @@
             <ul class="listaPaginas">
                 <li>
                     <a href="#servicos">
-                        <div>   
+                        <div>
                             <img src="../assets/icons/briefcase-outline.svg" alt="Serviços">
                         </div>
                         Serviços
@@ -68,7 +73,7 @@
                 <a>
                     <div>
                         <img src="../assets/icons/mail-outline.svg" alt="Meios de comunicação">
-                    </div>  
+                    </div>
                     Redes
                 </a>
             </div>
@@ -92,38 +97,47 @@
             </ul>
         </nav>
     </header>
- 
 
     <hr class="barraHorizontal">
 
     <div class="content">
-        <h1 id="title">Núcleo de Desenvolvimento de Softwares <br> & Soluções Inovadoras</h1>
-        <h2 id="subtitle"> Saiba porque somos a melhor opção <br> para quem deseja possuir um software</h2>
-        <br><br>
-        <h3 id="categorias"> Multiplos segmentos de atuação</h3>
-        <ul class="trabalhos">
-            <li class="legenda">
-                <button class="btn-segmento" id="software"></button>
-                <p class="subtitleBtn">Software</p>
-            </li>
-            <li class="legenda">
-                <button class="btn-segmento" id="inovacao"></button>
-                <p class="subtitleBtn">Inovação</p>
+        <section id="inicio">
+            <h1 id="title">Núcleo de Desenvolvimento de Softwares <br> & Soluções Inovadoras</h1>
+            <h2 id="subtitle"> Saiba porque somos a melhor opção <br> para quem deseja possuir um software</h2>
+        </section>
 
-            </li>
-            <li class="legenda">
-                <button class="btn-segmento" id="ia"></button>
-                <p class="subtitleBtn">Inteligência Artificial</p>
-            </li>
-            <li class="legenda">
-                <button class="btn-segmento" id="automacao"></button>
-                <p class="subtitleBtn">Automação</p>
-            </li>
-        </ul>
-        <h1  id="title2">Uma empresa diferenciada <br> em todos os aspectos</h1>
-        <h2 id="subtitle2"> Uma empresa que nasceu com <br> uma mentalidade inovadora, e <br> traz o jovem empreendedorismo <br> como lema.</h2>
-        <img id="avatares" src="../avatares.png">
-        <button id="btn-diferencial">NOSSO DIFERENCIAL</button>
+        <section name="servicos" id="servicos">
+            <h3 id="categorias"> Multiplos segmentos de atuação</h3>
+            <ul class="trabalhos">
+                <li class="legenda">
+                    <button class="btn-segmento" id="software"></button>
+                    <p class="subtitleBtn">Software</p>
+                </li>
+                <li class="legenda">
+                    <button class="btn-segmento" id="inovacao"></button>
+                    <p class="subtitleBtn">Inovação</p>
+
+                </li>
+                <li class="legenda">
+                    <button class="btn-segmento" id="ia"></button>
+                    <p class="subtitleBtn">Inteligência Artificial</p>
+                </li>
+                <li class="legenda">
+                    <button class="btn-segmento" id="automacao"></button>
+                    <p class="subtitleBtn">Automação</p>
+                </li>
+            </ul>
+        </section>
+
+        <section name="historia" id="historia">
+            <img id="avatares" src="../avatares.png">
+            <button id="btn-diferencial">Nosso diferencial</button>
+            <div id="descricaoHistoria">
+                <h1 id="title2">Uma empresa diferenciada <br> em todos os aspectos</h1>
+                <h2 id="subtitle2"> Uma empresa que nasceu com <br> uma mentalidade inovadora, e <br> traz o jovem
+                    empreendedorismo <br> como lema.</h2>
+            </div>
+        </section>
 
     </div>
 
@@ -153,13 +167,14 @@
             </li>
             <li>
                 <img src="../assets/icons/social/logo-whatsapp.svg">
-                <p>(83) 98822-6519(Fábio)</p>
+                <p>(83) 98822-6519 (Fábio)</p>
             </li>
         </ul>
 
     </footer>
 
     <script src="..\assets\scripts\main.js"></script>
+    <script src="..\assets\scripts\trabalhos.js"></script>
 
 </body>
 

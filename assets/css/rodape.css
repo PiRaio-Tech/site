@@ -1,0 +1,62 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #C9E265;
+    height: 30vh;
+    padding: 50px 20% 50px 20%;
+}
+
+footer img{
+    width: 25px;
+}
+
+footer h4{
+    font-weight: bold;
+    color: #060A0E;
+    margin: 0 0 40px 0;
+    padding: 10px;
+    font-size: 28px;
+    border: 3px solid #060A0E;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    width: 7em;
+}
+
+.parqueTec{
+    display: flex;
+    align-items: center;
+    margin: 0 20px 10px 25px;
+}
+
+footer h5{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+footer p{
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+
+    margin: 50px 0 0 20px;
+    width: 250px;
+}
+
+footer li{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+footer li img{
+    height: 20px;
+}
