@@ -1,9 +1,7 @@
 footer{
-    display: flex;
-    flex-direction: column;
     background-color: #C9E265;
-    height: 30vh;
-    padding: 50px 20% 50px 20%;
+    min-height: 30vh;
+    padding: 50px 6% 50px 20%;
 }
 
 footer img{
@@ -60,3 +58,4 @@ footer li{
 footer li img{
     height: 20px;
 }
+

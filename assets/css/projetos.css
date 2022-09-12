@@ -1,0 +1,43 @@
+#titulo-projetos{
+    font-size: 20pt;
+    color: #C9E265;
+    font-weight: bold;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#caixa-projetos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25vh;
+}
+
+#caixa-projetos > div{
+    height: 30vh;
+}
+
+#caixa-projetos .imagem-projeto{
+    width: 12vw;
+    height: 15vw;
+    background-color: gray;
+    padding: 10px;
+
+    border: #C9E265 solid 10px;
+
+    background-image: url("../projetos/infoagua/infoaguainicio.png");
+    background-position: center;
+    background-size: contain;
+
+    cursor: pointer;
+}
+
+#caixa-projetos p{
+    text-align: center;
+    color: #BDB9B9;
+    margin: 20px;
+    font-size: 15pt;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+

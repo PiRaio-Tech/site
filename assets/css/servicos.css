@@ -73,6 +73,17 @@
     animation-duration: 0.5s;
 }
 
+hr{
+    margin-top: 100px;
+    border-color: transparent;
+    width: 70%;
+    background-color: #BDB9B950;
+
+    margin-bottom: 40vh;
+
+
+}
+
 @keyframes select {
     from{
         background-color: #C9E265;
