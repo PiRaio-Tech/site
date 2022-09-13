@@ -1,10 +1,17 @@
 const botoesTrabalhos = document.querySelectorAll('.legenda')
 
-botoesTrabalhos.forEach(item => {
-    item.addEventListener('mouseover', () => {escurecer(item)})
-})
+const btnSoftware = document.querySelector('#software')
+const btnInovacao = document.querySelector('#inovacao')
+const btnIa = document.querySelector('#ia')
+const btnAutomacao = document.querySelector('#automacao')
+
+btnSoftware.addEventListener('click', () => {selecionar("#projeto-software", btnSoftware)})
+btnInovacao.addEventListener('click', () => {selecionar("#projeto-inovacao", btnInovacao)})
+btnIa.addEventListener('click', () => {selecionar("#projeto-ia", btnIa)})
+btnAutomacao.addEventListener('click', () => {selecionar("#projeto-automacao", btnAutomacao)})
 
 botoesTrabalhos.forEach(item => {
+    item.addEventListener('mouseover', () => {escurecer(item)})
     item.addEventListener('mouseleave', () => {clarear()})
 })
 
@@ -23,4 +30,8 @@ function clarear(){
         item.children[0].classList.remove('selecionado')
         item.children[0].classList.remove('naoSelecionado')
     })
+}
+
+function selecionar(id, target){
+    document.querySelector(id).style = 'display: flex'
 }

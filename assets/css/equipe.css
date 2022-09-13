@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 15vh;
+    margin-top: 30vh;
 }
 
 #title2{
@@ -39,4 +40,22 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+#btn-diferencial:hover{
+    width: 265px;
+    height: 60px;
+    animation-name: hoverDiferencial;
+    animation-duration: 300ms;
+}
+
+
+@keyframes hoverDiferencial {
+    from{
+        width: 250px;
+        height: 50px;
+    }to{
+        width: 265px;
+        height: 60px;
+    }
 }

@@ -1,5 +1,5 @@
 #servicos{
-    margin-bottom: 40vh;
+    margin-bottom: 30vh;
 }
 
 #categorias{
@@ -74,13 +74,12 @@
 }
 
 hr{
-    margin-top: 100px;
+    margin-top: 12vh;
     border-color: transparent;
     width: 70%;
     background-color: #BDB9B950;
 
-    margin-bottom: 40vh;
-
+    margin-bottom: 15vh;
 
 }
 
@@ -105,4 +104,60 @@ hr{
     to{
         background-color: #C9E26525;
     } 
+}
+
+#projeto-software{
+    display: none; /*flex*/
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    height: 20vh;
+
+    animation: mostrarProjetos 600ms forwards;
+    overflow: hidden;
+}
+
+#projeto-software div{
+    border: 10px #C9E265 solid;
+    background-color: gray;
+    height: 15vh;
+    width: 30vh;
+    min-height: 100px;
+    min-width: 250px;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+#projeto-software div:first-child{
+    background-image: url("../../infoaguap.png");
+}
+
+#projeto-software div:not(div:first-child){
+    background-image: url("../../embreve.png");
+}
+
+#projeto-software div:hover{
+    width: 32vh;
+    height: 16vh;
+
+    animation: hoverServicos 300ms;
+}
+
+@keyframes hoverServicos {
+    from{
+        width: 30vh;
+        height: 15vh;
+    }to{
+        width: 32vh;
+        height: 16vh;
+    }
+}
+
+@keyframes mostrarProjetos {
+    0%  {height: 0; visibility: hidden;}
+    25% {height: 20vh; visibility: hidden;}
+    26% {visibility: visible;  margin-left: 120vw;}
+    75% {margin-left: -2vw;}
+    100%{margin-left: 0;}
 }

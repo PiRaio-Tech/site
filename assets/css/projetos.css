@@ -2,33 +2,35 @@
     font-size: 20pt;
     color: #C9E265;
     font-weight: bold;
-    margin-bottom: 100px;
+    margin-bottom: 12vh;
     text-align: center;
 }
 
 #caixa-projetos{
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 25vh;
-}
-
-#caixa-projetos > div{
-    height: 30vh;
+    margin-bottom: 18vh;
+    height: 17vw;
+    gap: 5vw;
 }
 
 #caixa-projetos .imagem-projeto{
-    width: 12vw;
+    width: 11vw;
     height: 15vw;
     background-color: gray;
     padding: 10px;
 
     border: #C9E265 solid 10px;
 
-    background-image: url("../projetos/infoagua/infoaguainicio.png");
+    cursor: pointer;
+}
+
+#caixa-meio .imagem-projeto{
+    background-image: url("../projetos/infoagua/infoaguasite.PNG");
     background-position: center;
     background-size: contain;
 
-    cursor: pointer;
 }
 
 #caixa-projetos p{
@@ -38,6 +40,34 @@
     font-size: 15pt;
     font-weight: 600;
     cursor: pointer;
-
 }
 
+#caixa-projetos .imagem-projeto:hover{
+    animation-name: hoverProjetos;
+    animation-duration: 300ms;
+    width: 13vw;
+    height: 18vw;
+}
+
+#caixa-meio .imagem-projeto:hover{
+    animation: hoverProjetos 300ms forwards, hoverMeio 12s infinite;
+}
+
+
+@keyframes hoverMeio {
+    0%   {background-image: url("../projetos/infoagua/infoaguasite.PNG");}
+    25%  {background-image: url("../projetos/infoagua/infoaguainicio.png");}
+    50%  {background-image: url("../projetos/infoagua/infoaguadenuncia.png");}
+    75%  {background-image: url("../projetos/infoagua/infoaguaconsumo.PNG");}
+    100% {background-image: url("../projetos/infoagua/infoaguasite.PNG");}
+}
+
+@keyframes hoverProjetos {
+    from{
+        width: 11vw;
+        height: 15vw;
+    }to{
+        width: 13vw;
+        height: 18vw;
+    }
+}
