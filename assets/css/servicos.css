@@ -1,5 +1,5 @@
 #servicos{
-    margin-bottom: 30vh;
+    margin-bottom: 10vh;
 }
 
 #categorias{
@@ -12,6 +12,7 @@
 
 .trabalhos{
     margin-top: 15vh;
+    margin-bottom: 10vh;
 }
 
 .btn-segmento{
@@ -74,7 +75,6 @@
 }
 
 hr{
-    margin-top: 12vh;
     border-color: transparent;
     width: 70%;
     background-color: #BDB9B950;
@@ -106,18 +106,20 @@ hr{
     } 
 }
 
-#projeto-software{
+.exposicao-projetos{
     display: none; /*flex*/
     align-items: center;
     gap: 50px;
     justify-content: center;
     height: 20vh;
 
-    animation: mostrarProjetos 600ms forwards;
+    margin-bottom: 50px;
+
+    animation: mostrarProjetos 800ms forwards;
     overflow: hidden;
 }
 
-#projeto-software div{
+.exposicao-projetos div{
     border: 10px #C9E265 solid;
     background-color: gray;
     height: 15vh;
@@ -127,9 +129,11 @@ hr{
     background-size: contain;
     background-position: center;
     cursor: pointer;
+
+    background-image: url("../../embreve.png");
 }
 
-#projeto-software div:first-child{
+#projeto-software div:first-child, #projeto-inovacao div:first-child{
     background-image: url("../../infoaguap.png");
 }
 
@@ -137,11 +141,25 @@ hr{
     background-image: url("../../embreve.png");
 }
 
-#projeto-software div:hover{
+.exposicao-projetos div:hover{
     width: 32vh;
     height: 16vh;
 
     animation: hoverServicos 300ms;
+}
+
+#nome-projeto{
+    font-size: 20pt;
+    font-weight: bold;
+    color: #BDB9B9;
+    margin-bottom: 25pt;
+}
+
+#descricao-projeto{
+    font-size: 16pt;
+    line-height: 25pt;
+    color: #BDB9B9;
+
 }
 
 @keyframes hoverServicos {

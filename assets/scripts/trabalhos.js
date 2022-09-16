@@ -5,10 +5,12 @@ const btnInovacao = document.querySelector('#inovacao')
 const btnIa = document.querySelector('#ia')
 const btnAutomacao = document.querySelector('#automacao')
 
-btnSoftware.addEventListener('click', () => {selecionar("#projeto-software", btnSoftware)})
-btnInovacao.addEventListener('click', () => {selecionar("#projeto-inovacao", btnInovacao)})
-btnIa.addEventListener('click', () => {selecionar("#projeto-ia", btnIa)})
-btnAutomacao.addEventListener('click', () => {selecionar("#projeto-automacao", btnAutomacao)})
+const exposicaoTrabalhos = document.querySelector('#projetos-da-categoria').children
+
+btnSoftware.addEventListener('click', () => {selecionar(0, btnSoftware)})
+btnInovacao.addEventListener('click', () => {selecionar(1, btnInovacao)})
+btnIa.addEventListener('click', () => {selecionar(2, btnIa)})
+btnAutomacao.addEventListener('click', () => {selecionar(3, btnAutomacao)})
 
 botoesTrabalhos.forEach(item => {
     item.addEventListener('mouseover', () => {escurecer(item)})
@@ -33,5 +35,11 @@ function clarear(){
 }
 
 function selecionar(id, target){
-    document.querySelector(id).style = 'display: flex'
+    for(i=0; i<4; i++){
+        if(id == i){
+            exposicaoTrabalhos[id].style = 'display: flex'
+            continue
+        }
+        exposicaoTrabalhos[i].style = 'display: none'
+    }
 }
