@@ -41,3 +41,16 @@ body{
     right: 5%;
     bottom: 10%;
 }
+
+.titulo_historia{
+    font: bolder 28px 'Open Sans';
+    color: #C9E265;
+ 
+}
+
+.p_historia{
+    font-size: 16px;
+    color: #BDB9B9;
+    line-height: 24px;
+    font-weight: bold;
+}
